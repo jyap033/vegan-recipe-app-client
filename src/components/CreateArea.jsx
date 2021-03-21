@@ -88,6 +88,7 @@ function CreateArea(props) {
     console.log(note.instructionList)
   }
   function submitNote(event) {
+    console.log("submitted")
     NotesDataService.create(note)
       .then(response => {
         console.log(response.data);
