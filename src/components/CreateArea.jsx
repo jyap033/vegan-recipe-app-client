@@ -113,7 +113,6 @@ function CreateArea(props) {
   //Render CreateArea here
   return (
     <div>
-
       <form>
         <p class="h2 center green" id="createTitle">Create your recipe!</p>
         <p class="h5 center green">Info</p>
@@ -134,9 +133,7 @@ function CreateArea(props) {
           placeholder="Enter imageURL"
         />
         <br />
-
         <p class="h5 center green">Ingredients</p>
-
         <table id="ingredientTable" className="table table-bordered">
           <tbody>
             <tr>

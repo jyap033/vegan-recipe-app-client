@@ -12,7 +12,9 @@ class NotesDataService {
   }
 
   create(data) {
-    return http.post("/notes", data);
+    var temp = http.post("/notes", data);
+    console.log(temp)
+    return temp;
   }
 
   update(id, data) {
