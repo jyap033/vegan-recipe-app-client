@@ -136,13 +136,13 @@ export default class EditNote extends Component {
             .then(response => {
                 console.log(response.data);
                 console.log("updated")
+                window.location.href = 'https://ecstatic-lichterman-fad233.netlify.app/';
+
             })
             .catch(e => {
                 console.log(e.response.data);
             });
 
-
-        // this.props.history.push('/')
        
         // this.setState(prevState => ({
         //     note: {
@@ -162,7 +162,7 @@ export default class EditNote extends Component {
         // props.onAdd();
 
 
-        event.preventDefault();
+  
     }
 
     //    demo () {
