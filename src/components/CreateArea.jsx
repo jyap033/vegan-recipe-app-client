@@ -88,6 +88,7 @@ function CreateArea(props) {
     console.log(note.instructionList)
   }
   function submitNote(event) {
+
     console.log("submitted")
     setTimeout(() => {console.log("Waiting...")}, 5000 )
     NotesDataService.create(note)
@@ -97,15 +98,17 @@ function CreateArea(props) {
       .catch(e => {
         console.log(e);
       });
-    setNote({
-      title: "",
-      imageURL: "",
-      ingredient: "",
-      instruction: "",
-      amount: "",
-      ingredientList: [],
-      instructionList: [],
-    });
+
+
+    // setNote({
+    //   title: "",
+    //   imageURL: "",
+    //   ingredient: "",
+    //   instruction: "",
+    //   amount: "",
+    //   ingredientList: [],
+    //   instructionList: [],
+    // });
     props.onAdd();
     event.preventDefault();
   }
@@ -226,7 +229,7 @@ function CreateArea(props) {
           rows="3"
         />
         <button class="btn" type="button" id="addInstructionButton" onClick={handleAddInstruction}>Add Instruction</button>
-        <button id="createButton" onClick={submitNote}><i class="fas fa-plus"></i></button>
+        <button type="button" id="createButton" onClick={submitNote}><i class="fas fa-plus"></i></button>
       </form>
     </div>
   );
