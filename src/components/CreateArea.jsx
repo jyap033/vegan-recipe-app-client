@@ -89,6 +89,7 @@ function CreateArea(props) {
   }
   function submitNote(event) {
     console.log("submitted")
+    setTimeout(() => {console.log("Waiting...")}, 5000 )
     NotesDataService.create(note)
       .then(response => {
         console.log(response.data);
