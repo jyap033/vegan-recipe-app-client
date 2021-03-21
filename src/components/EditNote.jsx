@@ -130,6 +130,8 @@ export default class EditNote extends Component {
     //         history.goBack()
     //     }
     updateNote(event) {
+
+        console.log(this.state.note.title)
         NotesDataService.update(this.state.note._id, this.state.note)
             .then(response => {
                 console.log(response.data);
@@ -140,8 +142,8 @@ export default class EditNote extends Component {
             });
 
 
-        this.props.history.push('/')
-        window.location.reload(false);
+        // this.props.history.push('/')
+       
         // this.setState(prevState => ({
         //     note: {
         //     title: "",
@@ -160,7 +162,7 @@ export default class EditNote extends Component {
         // props.onAdd();
 
 
-        // event.preventDefault();
+        event.preventDefault();
     }
 
     //    demo () {
