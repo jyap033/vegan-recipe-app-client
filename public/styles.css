@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    background: #eee;
+    padding: 0 16px;
+  }
+  table{
+    table-layout: auto;
+    border-collapse: collapse;
+    size: 80%;
+    border-spacing: 100px;
+    margin: auto;
+ 
+  }
+  table tr {
+  
+    text-align: center; 
+    vertical-align: middle;
+    horizontal-align: middle;
+  }
+  table th tr {
+    font-size: 14px;
+    text-align: center; 
+    vertical-align: middle;
+    horizontal-align: middle;
+  }
+  
+  header {
+    background-color: #4bd480;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+  }
+  
+  footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+  
+  img {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    width: 150px;
+    height: 150px;
+    align-items: center;
+ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  button{
+    background-color:transparent
+  }
+
+  footer p {
+    color: #ccc;
+  }
+
+
+.link{
+  font-size: 1.5em;
+}
+
+  .note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 350px;
+    margin: 16px; 
+    float: left;
+  }
+  .note h1 {
+    font-size: 1.5em;
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+  #instruction{
+    font-size: 1.5em;
+ 
+
+  }
+  .note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .note button {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    color: #4bd480;
+    border: none;
+
+    cursor: pointer;
+    outline: none;
+  }
+  
+  form {
+    position: relative;
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+  }
+  form input,
+  form textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+  }
+  #ingredient{
+    position: relative;
+
+  }
+  #amount{
+    position: relative;
+   
+  }
+ #createButton{
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background: #4bd480;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+  }
+#createTitle{
+  margin-bottom: 20px;
+}
+#addIngredientButton{
+  position: relative;
+  right: -255px;
+  
+margin-top: 10px;
+  margin-bottom: 20px;
+  background: #4bd480;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  width: 190px;
+  height: 36px; 
+}
+textarea[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border:1px solid rgb(216, 215, 215);
+  border-radius: 4px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border:1px solid rgb(216, 215, 215);
+  border-radius: 4px;
+}
+#addInstructionButton {
+  position: relative;
+  right: -255px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: #4bd480;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  width: 190px;
+  height: 36px;
+}
+
+#instructionTable {
+  margin-top: 5px;
+  padding: 10;
+  }
+
+  #instructiontd{
+    text-align: left;
+    vertical-align: left;
+    }
+ 
+  #ingredientTable{
+  margin-top: 5px;
+  padding: 10;
+  }
+  .submit-form {
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .edit-form {
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .deleteButton{
+ 
+    border: none;
+    background-color: transparent;
+    
+  }
+
+  .red{
+    color: rgba(197, 17, 17, 0.781);
+  }
+  .green{
+    color: #4bd480;  }
+
+    .grey{
+      color: #babeba;  }
+
+  .center{
+    text-align: center;
+  }
+
+  .round-border{
+    border:1px solid #babeba;;
+  border-radius: 100px;
+  padding: 7px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  left: 10px;
+  }
+
+  .shadow{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
