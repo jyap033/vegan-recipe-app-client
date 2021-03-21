@@ -229,7 +229,7 @@ function CreateArea(props) {
           rows="3"
         />
         <button class="btn" type="button" id="addInstructionButton" onClick={handleAddInstruction}>Add Instruction</button>
-        <button id="createButton" onClick={submitNote}><i class="fas fa-plus"></i></button>
+        <button type="button" id="createButton" onClick={submitNote}><i class="fas fa-plus"></i></button>
       </form>
     </div>
   );
