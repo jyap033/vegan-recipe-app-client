@@ -13,7 +13,7 @@ function Note(props) {
     NotesDataService.delete(id)
       .then(response => {
         console.log(response.data);
-        this.props.history.push('/notes')
+        // this.props.history.push('/notes')
         window.location.reload(false);
       })
       .catch(e => {
