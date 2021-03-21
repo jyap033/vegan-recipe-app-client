@@ -5,17 +5,16 @@ import { Link } from "react-router-dom";
 function Note(props) {
   function handleClick() {
     deleteNote(props.id);
-    refreshPage()
+   
 
   }
-  function refreshPage() {
-    window.location.reload(false);
-  }
+
   function deleteNote(id) {
     NotesDataService.delete(id)
       .then(response => {
         console.log(response.data);
         this.props.history.push('/notes')
+        window.location.reload(false);
       })
       .catch(e => {
         console.log(e);

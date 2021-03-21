@@ -110,7 +110,7 @@ function CreateArea(props) {
       instructionList: [],
     });
     props.onAdd();
-    event.preventDefault();
+    // event.preventDefault();
   }
 
 
